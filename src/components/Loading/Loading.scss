@@ -1,0 +1,15 @@
+.loading__wrap {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  img {
+    display: block;
+    width: inherit;
+    height: auto;
+  }
+}

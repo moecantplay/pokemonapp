@@ -1,0 +1,28 @@
+@import "../../scss/variables/_colors.scss";
+
+.poke__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  color: $primaryWhite;
+  background-color: $primaryGray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.poke__header-nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

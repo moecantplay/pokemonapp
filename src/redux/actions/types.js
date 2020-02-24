@@ -1,0 +1,4 @@
+export default {
+  OWNED_LIST: "OWNED_LIST",
+  REMOVE_POKEMON: "REMOVE_POKEMON"
+};
