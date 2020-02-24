@@ -74,6 +74,7 @@ class List extends React.Component {
               listPokemon.map(item => (
                 <div className="pokemon__list-item" key={item.name}>
                   <Card
+                    link={item.name}
                     name={item.name}
                     owned={() => this.matchOwnedData(item.name)}
                   />

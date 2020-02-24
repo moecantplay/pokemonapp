@@ -15,9 +15,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <ToastWrapper />
-        {/* <ToastContainer position="top-right" autoClose={3000} hideProgressBar={false} newestOnTop pauseOnHover closeOnClick /> */}
         <Header />
         <Switch>
           <Route path="/" exact component={props => <List {...props} />} />

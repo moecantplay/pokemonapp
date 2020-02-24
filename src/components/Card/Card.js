@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Card.scss";
 
-const Card = ({ name, nickname, owned, removeFunction }) => {
+const Card = ({ link, name, nickname, owned, removeFunction }) => {
   const capitalised = string =>
     string.replace(/^\w/, function(chr) {
       return chr.toUpperCase();
@@ -10,7 +10,7 @@ const Card = ({ name, nickname, owned, removeFunction }) => {
 
   return (
     <div className="pokemon__card">
-      <Link to={`/detail/${name}`} className="pc__link" />
+      <Link to={`/detail/${link}`} className="pc__link" />
       {nickname && (
         <div className="pc__item">
           <span className="label">Nickname:</span>
