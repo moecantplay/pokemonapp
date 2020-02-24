@@ -82,12 +82,14 @@ class List extends React.Component {
               ))}
             {isLoading && <Loading />}
           </div>
-          <Pagination
-            prevFunc={() => this.fetchListPokemon(prevPage)}
-            nextFunc={() => this.fetchListPokemon(nextPage)}
-            disablePrev={prevPage.offset === "" && true}
-            disableNext={nextPage.offset === "" && true}
-          />
+          {!isLoading && listPokemon.length > 0 && (
+            <Pagination
+              prevFunc={() => this.fetchListPokemon(prevPage)}
+              nextFunc={() => this.fetchListPokemon(nextPage)}
+              disablePrev={prevPage.offset === "" && true}
+              disableNext={nextPage.offset === "" && true}
+            />
+          )}
         </div>
       </div>
     );
