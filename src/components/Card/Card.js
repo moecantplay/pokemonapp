@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Card.scss";
 
-const Card = ({ link, name, nickname, owned, removeFunction }) => {
-  const capitalised = string =>
-    string.replace(/^\w/, function(chr) {
+const Card = ({ link, image, name, nickname, owned, removeFunction }) => {
+  const capitalised = (string) =>
+    string.replace(/^\w/, function (chr) {
       return chr.toUpperCase();
     });
 
